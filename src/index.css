@@ -1,13 +1,331 @@
-body {
+/*@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fontlibrary.org//face/dogica');
+@import url('https://fontlibrary.org//face/pixel-operator');
+/* base styles */
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Source Code Pro', monospace;
+  color: #39f172;
+  background-color: #101010;
+  user-select: none;
+  text-shadow: 0px 0px 3px #39f172;
+  text-decoration: none;
+}
+/* *:focus {
+  outline: none;
+  color: #101010;
+  background-color: #39f172;
+  box-shadow: 0px 0px 5px #39f172;
+} */
+h1 {
+  font-family: 'DogicaPixelRegular';
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: 0px 0px 6px #39f172;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a:hover {
+  cursor: crosshair;
 }
+
+button {
+  margin-top: 8px;
+  border-color: #39f172;
+  text-shadow: 0px 0px 3px #39f172;
+}
+
+button:hover {
+  color: #101010;
+  background-color: #39f172;
+  cursor: crosshair;
+}
+input,
+textarea,
+select {
+  border-color: #39f172;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  color: #101010;
+  background-color: #39f172;
+  box-shadow: 0px 0px 5px #39f172;
+}
+input {
+  border-style: solid;
+  border-width: 1px;
+}
+::selection {
+  background-color: #101010;
+  color: #39f172;
+}
+
+.bio {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px;
+  border-color: #39f172;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bio:hover {
+  box-shadow: 1px 3px 5px #39f172;
+}
+
+.bio-content {
+  margin-left: 1em;
+  /* margin-top: 8px; */
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 8px;
+}
+.bio-content:hover {
+  box-shadow: 1px 3px 5px #39f172;
+}
+.bio-content p {
+  line-height: 2;
+  font-size: larger;
+  margin-top: 2px;
+}
+.bio-content h2:hover {
+  color: #101010;
+  background-color: #39f172;
+  cursor: crosshair;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+}
+img:-moz-broken {
+  opacity: 0;
+}
+.profile img {
+  margin: auto;
+  background-image: url('./images/greenFaceCropped.png');
+  background-size: 150px;
+  height: 210px;
+  width: 150px;
+}
+.profile img:hover {
+  cursor: crosshair;
+  box-shadow: 1px 3px 5px #39f172;
+  background-image: url('./images/pinkFaceCropped.png');
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #39f172;
+}
+.navbar h1 {
+  color: #39f172;
+  /* user-select: none; */
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.navbar h1:hover {
+  color: #101010;
+  background-color: #39f172;
+  cursor: crosshair;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  text-shadow: 0px 0px 3px #39f172;
+}
+.navbar a:hover {
+  color: #101010;
+  background-color: #39f172;
+  cursor: crosshair;
+}
+.navbar a:focus {
+  color: #39f172;
+  background-color: #101010;
+}
+.navbar img {
+  height: 50px;
+}
+/* .github-link {
+  border-radius: 50%;
+  height: 50px;
+}
+.github-link:hover {
+  background-color: #39f172;
+  box-shadow: 0 0 0 12px #39f172;
+} */
+/* .navbar img:hover {
+  background: #39f172;
+  box-shadow: 0 0 100px #39f172;
+} */
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog previews / list */
+.blog-list h2 {
+  text-shadow: 0px 0px 3px #39f172;
+  /* user-select: none; */
+}
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #39f172;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px #39f172;
+  cursor: crosshair;
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: #39f172;
+  margin-bottom: 8px;
+  padding-left: 2px;
+  font-family: 'PixelOperatorMonoRegular';
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: 0px 0px 3px #39f172;
+}
+
+.blog-preview:hover h2 {
+  color: #101010;
+  background-color: #39f172;
+}
+
+.blog-preview p {
+  padding-left: 2px;
+  text-shadow: 0px 0px 3px #39f172;
+}
+
+.blog-details h2 {
+  font-size: 20px;
+  color: #39f172;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
+
+.create {
+  display: flex;
+  flex-direction: column;
+}
+.create-form-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.not-found h2,
+.not-found p,
+.not-found a {
+  margin-bottom: 10px;
+  margin-top: 10px !important;
+}
+.not-found a:hover {
+  color: #101010;
+  background-color: #39f172;
+  padding: 2px;
+}
+
+/* input:focus,
+textarea:focus,
+option:focus,
+option::selection {
+  border: 1px solid gray !important;
+
+  box-shadow: 0 0 2px gray !important;
+
+  outline: none !important;
+
+  outline-width: 0 !important;
+} */
+/* input:focus {
+  border: 1px solid gray !important;
+  box-shadow: 0 0 2px gray !important;
+  outline: none !important;
+  outline-width: 0 !important;
+  outline-offset: 0 !important;
+} */
+
+/* .blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+} */
+
+/* create new blog form
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.create div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.create label {
+  text-align: left;
+  display: block;
+  margin: auto;
+}
+.create h2 {
+  font-size: 20px;
+  color: #39f172;
+  margin-bottom: 30px;
+}
+.create form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #39f172;
+  box-sizing: border-box;
+ display: block;
+} 
+/* .create button {
+  background: #39f172;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+} */
+
+/* .blog-preview button {
+  margin-top: 8px;
+  border-color: #39f172;
+  text-shadow: 0px 0px 3px #39f172;
+}
+
+.blog-preview button:hover {
+  color: #101010;
+  background-color: #39f172;
+} */
