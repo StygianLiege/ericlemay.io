@@ -13,12 +13,7 @@
   text-shadow: 0px 0px 3px #39f172;
   text-decoration: none;
 }
-/* *:focus {
-  outline: none;
-  color: #101010;
-  background-color: #39f172;
-  box-shadow: 0px 0px 5px #39f172;
-} */
+
 h1 {
   font-family: 'DogicaPixelRegular';
   font-weight: normal;
@@ -68,50 +63,71 @@ input {
   justify-content: space-between;
   border: solid 1px;
   border-color: #39f172;
-  padding-top: 10px;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.bio:hover {
-  box-shadow: 1px 3px 5px #39f172;
+.bio-header {
+  border-bottom: solid 1px;
+  border-color: #39f172;
+  padding-left: 10px;
+  padding-bottom: 3px;
 }
-
-.bio-content {
-  margin-left: 1em;
-  /* margin-top: 8px; */
-  padding-left: 3px;
-  padding-right: 3px;
-  padding-top: 8px;
+.bio-content-container {
+  display: flex;
+  flex-direction: column;
 }
-.bio-content:hover {
-  box-shadow: 1px 3px 5px #39f172;
-}
-.bio-content p {
-  line-height: 2;
-  font-size: larger;
-  margin-top: 2px;
-}
-.bio-content h2:hover {
+.bio-content-container:hover h2 {
   color: #101010;
   background-color: #39f172;
   cursor: crosshair;
 }
-
-.profile {
-  display: flex;
-  align-items: center;
-  margin-right: 1em;
+.bio:hover {
+  box-shadow: 1px 3px 5px #39f172;
 }
+.bio:hover .bio-header {
+  color: #101010;
+  background-color: #39f172;
+  cursor: crosshair;
+  text-decoration: none;
+}
+
+.bio-content {
+  margin-left: 1em;
+
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bio-content-header {
+  border: solid 1px;
+  text-align: center;
+  padding-bottom: 3px;
+  margin-top: 5px;
+}
+
+.bio-content p {
+  font-size: larger;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
 img:-moz-broken {
   opacity: 0;
 }
-.profile img {
-  margin: auto;
+.bio-headshot {
   background-image: url('./images/greenFaceCropped.png');
-  background-size: 150px;
-  height: 210px;
-  width: 150px;
+  background-size: 200px;
+  height: 280px;
+  width: 200px;
+  margin-left: 5em;
+  margin-top: 10px;
+  border: 0px;
 }
-.profile img:hover {
+.bio-headshot:hover {
   cursor: crosshair;
   box-shadow: 1px 3px 5px #39f172;
   background-image: url('./images/pinkFaceCropped.png');
@@ -127,7 +143,6 @@ img:-moz-broken {
 }
 .navbar h1 {
   color: #39f172;
-  /* user-select: none; */
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -157,28 +172,17 @@ img:-moz-broken {
 .navbar img {
   height: 50px;
 }
-/* .github-link {
-  border-radius: 50%;
-  height: 50px;
-}
-.github-link:hover {
-  background-color: #39f172;
-  box-shadow: 0 0 0 12px #39f172;
-} */
-/* .navbar img:hover {
-  background: #39f172;
-  box-shadow: 0 0 100px #39f172;
-} */
+
+/* THIS GUY SETS THE WIDTH!! */
+
 .content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
 }
 
-/* blog previews / list */
-.blog-list h2 {
+/* .blog-list h2 {
   text-shadow: 0px 0px 3px #39f172;
-  /* user-select: none; */
 }
 .blog-preview {
   padding: 10px 16px;
@@ -228,7 +232,7 @@ img:-moz-broken {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
-}
+} */
 
 .not-found h2,
 .not-found p,
@@ -242,90 +246,92 @@ img:-moz-broken {
   padding: 2px;
 }
 
-/* input:focus,
-textarea:focus,
-option:focus,
-option::selection {
-  border: 1px solid gray !important;
-
-  box-shadow: 0 0 2px gray !important;
-
-  outline: none !important;
-
-  outline-width: 0 !important;
-} */
-/* input:focus {
-  border: 1px solid gray !important;
-  box-shadow: 0 0 2px gray !important;
-  outline: none !important;
-  outline-width: 0 !important;
-  outline-offset: 0 !important;
-} */
-
-/* .blog-details button {
-  background: #f1356d;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-} */
-
-/* create new blog form
-.create {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-.create div {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-.create label {
-  text-align: left;
-  display: block;
-  margin: auto;
-}
-.create h2 {
-  font-size: 20px;
-  color: #39f172;
-  margin-bottom: 30px;
-}
-.create form {
-  display: flex;
-  flex-direction: column;
-}
-
-.create input,
-.create textarea,
-.create select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #39f172;
-  box-sizing: border-box;
- display: block;
-} 
-/* .create button {
-  background: #39f172;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-} */
-
-/* .blog-preview button {
-  margin-top: 8px;
+/* tech */
+.tech {
+  margin-top: 4em;
+  border: solid 1px;
   border-color: #39f172;
-  text-shadow: 0px 0px 3px #39f172;
+}
+.tech-header {
+  padding-left: 10px;
+  padding-bottom: 3px;
+}
+.tech-content {
+  border-top: solid 1px;
+  border-color: #39f172;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
-.blog-preview button:hover {
+.tech-container {
+  padding: 12px;
+}
+.tech-container:hover h2 {
   color: #101010;
   background-color: #39f172;
-} */
+  cursor: crosshair;
+}
+.tech-container-content {
+  display: flex;
+}
+
+.tech:hover {
+  box-shadow: 1px 3px 5px #39f172;
+}
+.tech:hover .tech-header {
+  color: #101010;
+  background-color: #39f172;
+  cursor: crosshair;
+}
+
+.react-icon {
+  height: 65px;
+  align-items: center;
+  margin: auto;
+}
+.redux-icon {
+  height: 60px;
+  align-items: center;
+  margin: auto;
+}
+.node-icon {
+  height: 60px;
+  align-items: center;
+  margin: auto;
+  padding-left: 22px;
+}
+
+/* Work */
+.work {
+  border: solid 1px;
+  border-color: #39f172;
+  margin-top: 4em;
+}
+.work-header {
+  padding-left: 10px;
+  padding-bottom: 3px;
+}
+.work:hover {
+  box-shadow: 1px 3px 5px #39f172;
+}
+.work:hover h2 {
+  color: #101010;
+  background-color: #39f172;
+  cursor: crosshair;
+}
+.work-content {
+  padding: 16px;
+  border-top: solid 1px;
+  border-color: #39f172;
+}
+.work-link {
+  text-decoration: underline;
+}
+.work-link:hover {
+  color: #101010;
+  background-color: #39f172;
+  cursor: crosshair;
+  text-decoration: none;
+}
