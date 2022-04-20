@@ -24,7 +24,7 @@ const Tech = () => {
         </div>
         <div className="tech-container">
           <h2 className="tech-container-header">Redux</h2>
-          <dev className="tech-container-content">
+          <div className="tech-container-content">
             <div className="tech-container-content-words">
               <p>
                 ► Predictable <br />
@@ -35,7 +35,7 @@ const Tech = () => {
               </p>
             </div>
             <img src={redux} alt="redux-icon" className="redux-icon" />
-          </dev>
+          </div>
         </div>
         <div className="tech-container">
           <h2 className="tech-container-header">Node.js</h2>
