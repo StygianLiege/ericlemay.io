@@ -7,8 +7,8 @@ const Navbar = () => {
       <h1 onClick={() => new Audio(laser).play()}>Eric Roger Lemay</h1>
       <div className="links">
         {/* <Link to="/">Home</Link> */}
-        <Link to="/github" target="_blank" rel="noopener noreferrer">Github</Link>
-        <Link to="/linkedin" target="_blank" rel="noopener noreferrer">Linkedin</Link>
+        <Link to="/github">Github</Link>
+        <Link to="/linkedin">Linkedin</Link>
       </div>
     </nav>
   );
