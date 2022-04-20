@@ -10,7 +10,7 @@ const Bio = () => {
           <p>
             &nbsp;► Frontend focused <br />
             <br />
-            &nbsp;► Results driven <br />
+            &nbsp;► Detail oriented <br />
             <br />
             &nbsp;► Passionate about <br />
             &nbsp;&nbsp;&nbsp;polished, dynamic UIs <br />
