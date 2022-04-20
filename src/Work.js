@@ -10,7 +10,7 @@ const Work = () => {
           Most recently I co-created Mist, an application performance
           monitoring tool for pre-deployment CloudFlare workers. Mist allows
           developers to gather and analyze metrics on unpublished serverless
-          functions by locally hosting them in a simulated cloud environemnt
+          functions by locally hosting them in a simulated cloud environment
           integrated with OpenTelemetry tracing to record worker actvity and
           plot it across a series of Chart.js visuals. You can read more about
           Mist{' '}
