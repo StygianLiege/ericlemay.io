@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
-import laser from './audio/pew.mp3';
+import mothership6 from './audio/mothership6.aiff';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1 onClick={() => new Audio(laser).play()}>Eric Roger Lemay</h1>
+      <h1 onClick={() => new Audio(mothership6).play()}>Eric Roger Lemay</h1>
       <div className="links">
-        {/* <Link to="/">Home</Link> */}
         <Link to="/github">Github</Link>
         <Link to="/linkedin">Linkedin</Link>
       </div>
@@ -15,4 +14,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
