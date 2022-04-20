@@ -14,11 +14,11 @@ const Work = () => {
           integrated with OpenTelemetry tracing to record worker actvity and
           plot it across a series of Chart.js visuals. You can read more about
           Mist{' '}
-          <Link to="/mist-medium" className="work-link" target="_blank" rel="noopener noreferrer">
+          <Link to="/mist-medium" className="work-link">
             here
           </Link>
           , or check out the{' '}
-          <Link to="/mist-github" className="work-link" target="_blank" rel="noopener noreferrer">
+          <Link to="/mist-github" className="work-link">
             repo
           </Link>
           .
