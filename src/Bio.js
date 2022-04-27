@@ -19,9 +19,9 @@ const Bio = () => {
         <div className="bio-content-container">
           <h2 className="bio-content-header">Software Engineer</h2>
           <p>
-            &nbsp;► Frontend focused <br />
+            &nbsp;► Frontend-focused <br />
             <br />
-            &nbsp;► Detail oriented <br />
+            &nbsp;► Detail-oriented <br />
             <br />
             &nbsp;► Passionate about <br />
             &nbsp;&nbsp;&nbsp;polished, dynamic UIs <br />
