@@ -399,7 +399,10 @@ input {
     cursor: crosshair;
   }
   .navbar .links {
-    margin-left: auto;
+    margin-right: 2em;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
   }
   .navbar a {
     margin-left: 16px;
