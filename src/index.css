@@ -160,10 +160,11 @@ input {
     margin-left: auto;
   }
   .navbar a {
-    margin-left: 16px;
+    margin-left: 1px;
     text-decoration: none;
     padding: 6px;
     text-shadow: 0px 0px 3px #39f172;
+    font-size: small;
   }
   .navbar a:hover {
     color: #101010;
