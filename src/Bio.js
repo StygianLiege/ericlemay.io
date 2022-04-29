@@ -21,7 +21,7 @@ const Bio = () => {
           <p>
             &nbsp;► Lifts weights <br />
             <br />
-            &nbsp;► Drinks coffee <br />
+            &nbsp;► Loves cyberpunk <br />
             <br />
             &nbsp;► Passionate about <br />
             &nbsp;&nbsp;&nbsp;polished, dynamic UIs <br />
