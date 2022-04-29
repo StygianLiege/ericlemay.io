@@ -4,7 +4,7 @@ import pdf from './images/Eric_Lemay_Resume.pdf';
 
 const Navbar = () => {
   const go = 'mailto:';
-  const away = 'ericrogerlemay';
+  const away = 'lemay.eric.r';
   const spam = '@gmail';
   const bots = '.com';
   return (
