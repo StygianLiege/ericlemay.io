@@ -9,7 +9,7 @@ const Navbar = () => {
   const bots = '.com';
   return (
     <nav className="navbar">
-      <h1 onClick={() => new Audio(mothership6).play()}>Eric Roger Lemay</h1>
+      <h1 onClick={() => new Audio(mothership6).play()}>Eric Lemay</h1>
       <div className="links">
         <a href={pdf} download="Eric Lemay Resume">
           Resume
