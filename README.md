@@ -1,3 +1,3 @@
 # This is my website...
 
-Please visit at [ericlemay.io](https://ericlemay.io)
+Please visit at [ericlemay.io](https://ericlemay.io).
