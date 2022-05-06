@@ -11,7 +11,11 @@ const Navbar = () => {
     <nav className="navbar">
       <h1 onClick={() => new Audio(mothership6).play()}>Eric Lemay</h1>
       <div className="links">
-        <a href={pdf} download="Eric Lemay Resume">
+        <a
+          href={pdf}
+          download="Eric Lemay Resume"
+          onClick={(e) => e.target.blur()}
+        >
           Resume
         </a>
         <a href={go + away + spam + bots} onClick={(e) => e.target.blur()}>
