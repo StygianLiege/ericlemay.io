@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 const Work = () => {
   return (
     <div className="work">
@@ -13,13 +11,25 @@ const Work = () => {
           locally hosting them in a simulated cloud environment integrated with
           OpenTelemetry tracing to record worker actvity and plot it across a
           series of Chart.js visuals. You can read more about Mist{' '}
-          <Link to="/mist-medium" className="work-link" target="_blank">
+          <a
+            rel="noopener noreferrer"
+            href="https://medium.com/@lrinkedewit/what-is-mist-3902e46f037c"
+            className="work-link"
+            // target="_blank"
+            onClick={(e) => e.target.blur()}
+          >
             here
-          </Link>
+          </a>
           , or check out the{' '}
-          <Link to="/mist-github" className="work-link" target="_blank">
+          <a
+            rel="noopener noreferrer"
+            href="https://github.com/oslabs-beta/mist"
+            className="work-link"
+            // target="_blank"
+            onClick={(e) => e.target.blur()}
+          >
             repo
-          </Link>
+          </a>
           .
         </p>
       </div>

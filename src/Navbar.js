@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import mothership6 from './audio/mothership6.aiff';
 import pdf from './images/Eric_Lemay_Resume.pdf';
 
@@ -21,12 +20,22 @@ const Navbar = () => {
         <a href={go + away + spam + bots} onClick={(e) => e.target.blur()}>
           Email
         </a>
-        <Link to="/github" target="_blank">
+        <a
+          rel="noopener noreferrer"
+          href="https://github.com/StygianLiege"
+          //target="_blank"
+          onClick={(e) => e.target.blur()}
+        >
           Github
-        </Link>
-        <Link to="/linkedin" target="_blank">
+        </a>
+        <a
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/lemayericr/"
+          // target="_blank"
+          onClick={(e) => e.target.blur()}
+        >
           Linkedin
-        </Link>
+        </a>
       </div>
     </nav>
   );
