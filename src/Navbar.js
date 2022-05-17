@@ -21,8 +21,12 @@ const Navbar = () => {
         <a href={go + away + spam + bots} onClick={(e) => e.target.blur()}>
           Email
         </a>
-        <Link to="/github">Github</Link>
-        <Link to="/linkedin">Linkedin</Link>
+        <Link to="/github" target="_blank">
+          Github
+        </Link>
+        <Link to="/linkedin" target="_blank">
+          Linkedin
+        </Link>
       </div>
     </nav>
   );

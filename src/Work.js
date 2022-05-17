@@ -7,18 +7,17 @@ const Work = () => {
       <div className="work-content">
         <h2>Mist</h2>
         <p>
-          Most recently I worked on Mist, an application performance
-          monitoring tool for pre-deployment CloudFlare workers. Mist allows
-          developers to gather and analyze metrics on unpublished serverless
-          functions by locally hosting them in a simulated cloud environment
-          integrated with OpenTelemetry tracing to record worker actvity and
-          plot it across a series of Chart.js visuals. You can read more about
-          Mist{' '}
-          <Link to="/mist-medium" className="work-link">
+          Most recently I worked on Mist, an application performance monitoring
+          tool for pre-deployment CloudFlare workers. Mist allows developers to
+          gather and analyze metrics on unpublished serverless functions by
+          locally hosting them in a simulated cloud environment integrated with
+          OpenTelemetry tracing to record worker actvity and plot it across a
+          series of Chart.js visuals. You can read more about Mist{' '}
+          <Link to="/mist-medium" className="work-link" target="_blank">
             here
           </Link>
           , or check out the{' '}
-          <Link to="/mist-github" className="work-link">
+          <Link to="/mist-github" className="work-link" target="_blank">
             repo
           </Link>
           .
