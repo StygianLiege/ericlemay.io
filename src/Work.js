@@ -15,7 +15,6 @@ const Work = () => {
             rel="noopener noreferrer"
             href="https://medium.com/@lrinkedewit/what-is-mist-3902e46f037c"
             className="work-link"
-            // target="_blank"
             onClick={(e) => e.target.blur()}
           >
             here
@@ -25,7 +24,6 @@ const Work = () => {
             rel="noopener noreferrer"
             href="https://github.com/oslabs-beta/mist"
             className="work-link"
-            // target="_blank"
             onClick={(e) => e.target.blur()}
           >
             repo

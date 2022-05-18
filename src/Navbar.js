@@ -23,7 +23,6 @@ const Navbar = () => {
         <a
           rel="noopener noreferrer"
           href="https://github.com/StygianLiege"
-          //target="_blank"
           onClick={(e) => e.target.blur()}
         >
           Github
@@ -31,7 +30,6 @@ const Navbar = () => {
         <a
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/lemayericr/"
-          // target="_blank"
           onClick={(e) => e.target.blur()}
         >
           Linkedin

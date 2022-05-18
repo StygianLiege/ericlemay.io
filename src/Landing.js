@@ -8,7 +8,6 @@ const Landing = () => {
       <Bio />
       <Tech />
       <Work />
-      {/* <Experience /> */}
     </div>
   );
 };
