@@ -1,5 +1,5 @@
 import mothership6 from './audio/mothership6.aiff';
-import pdf from './images/Eric_Lemay_Resume.pdf';
+import pdf from './resume/Eric_Lemay_Resume.pdf';
 
 const Navbar = () => {
   const go = 'mailto:';
