@@ -10,7 +10,7 @@ const Bio = () => {
           <p>
             &nbsp;► Lifts weights <br />
             <br />
-            &nbsp;► Loves cyberpunk <br />
+            &nbsp;► Loves his dog <br />
             <br />
             &nbsp;► Passionate about <br />
             &nbsp;&nbsp;&nbsp;polished, dynamic UIs <br />
