@@ -3,30 +3,21 @@ const Work = () => {
     <div className="work">
       <h2 className="work-header">Experience Highlight:</h2>
       <div className="work-content">
-        <h2>Mist</h2>
+        <h2>WiseLayer</h2>
         <p>
-          Most recently I worked on Mist, an application performance monitoring
-          tool for pre-deployment CloudFlare workers. Mist allows developers to
-          gather and analyze metrics on unpublished serverless functions by
-          locally hosting them in a simulated cloud environment integrated with
-          OpenTelemetry tracing to record worker activity and plot it across a
-          series of Chart.js visuals. You can read more about Mist{' '}
+          Most recently I've been developing the UI at WiseLayer, a two-sided marketplace
+          offering smart notifications and analytics dashboards built over processed data
+          from common-use ERP systems. Harnessing React’s powerful, component-based architecture
+          integrated with global state management handled via Redux Toolkit, I’ve worked closely
+          with leadership to rapidly deliver an intuitive user experience providing actionable
+          insights from complex ERP data. To learn more about WiseLayer, click{' '}
           <a
             rel="noopener noreferrer"
-            href="https://medium.com/@lrinkedewit/what-is-mist-3902e46f037c"
+            href="https://wiselayer.com"
             className="work-link"
             onClick={(e) => e.target.blur()}
           >
             here
-          </a>
-          , or check out the{' '}
-          <a
-            rel="noopener noreferrer"
-            href="https://github.com/oslabs-beta/mist"
-            className="work-link"
-            onClick={(e) => e.target.blur()}
-          >
-            repo
           </a>
           .
         </p>
